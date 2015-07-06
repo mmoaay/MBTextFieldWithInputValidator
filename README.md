@@ -11,9 +11,13 @@
 2.策略模式，使用者可以通过继承`MBInputValidator`，重写`override func validateInput(input:UITextField) -> ErrorDesc?`方法即可实现自己的验证策略。目前已经实现了如下几种验证器
 
  -`MBEmptyInputValidator`:判断内容是否为空
+ 
  -`MBAlphabetInputValidator`：判断内容是否是英文字母
+ 
  -`MBNumberInputValidator`：判断内容是否是数字
+ 
  -`MBPhoneInputValidator`：判断内容是否是手机号
+ 
  -`MBPasswordInputValidator`：判断内容是否是6-12位字母或数字组成的密码
  
  3.验证器在Storyboard中指定（具体指定方法参见demo），在代码中只需要调用通用的验证方法即可，实现验证策略对业务功能开发者的透明。
