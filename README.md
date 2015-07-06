@@ -8,7 +8,7 @@
 
 1.采用Swift语言编写。
 
-2.策略模式，使用者可以通过继承`MBInputValidator`，重写`override func validateInput(input:UITextField) -> ErrorDesc?`方法即可实现自己的验证策略。目前已经实现了如下几种验证器
+2.策略模式，使用者可以通过继承`MBInputValidator`，重写`func validateInput(input:UITextField) -> ErrorDesc?`方法即可实现自己的验证策略。目前已经实现了如下几种验证器
 
 - `MBEmptyInputValidator`:判断内容是否为空
 - `MBAlphabetInputValidator`：判断内容是否是英文字母
