@@ -1,5 +1,7 @@
 # MBTextFieldWithInputValidator
 
+设计思想来源于部门总监，目前项目中使用的是OC的版本，用Swift又实现了一遍，然后对对某些细节进行了优化。
+
 ## 功能
 
 实现对`UITextField`输入内容进行验证的功能，如果内容不符合验证策略，则弹出错误信息提示用户
