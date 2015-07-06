@@ -16,6 +16,6 @@
 - `MBPhoneInputValidator`：判断内容是否是手机号
 - `MBPasswordInputValidator`：判断内容是否是6-12位字母或数字组成的密码
  
- 3.验证器在Storyboard中指定（具体指定方法参见demo），在代码中只需要调用通用的验证方法即可，实现验证策略对业务功能开发者的透明。
+3.验证器在Storyboard中指定（具体指定方法参见demo），在代码中只需要调用通用的验证方法即可，实现验证策略对业务功能开发者的透明。
  
- 4.因为`UIAlertView`将在iOS9中废除，所以采用了`UIAlertController`，又因为需要拿到`UITextField`所在的`ViewController`才能弹出`UIAlertController`，所以为UIView实现了获取其`ViewController`的extension。
+4.因为`UIAlertView`将在iOS9中废除，所以采用了`UIAlertController`，又因为需要拿到`UITextField`所在的`ViewController`才能弹出`UIAlertController`，所以为UIView实现了获取其`ViewController`的extension。
