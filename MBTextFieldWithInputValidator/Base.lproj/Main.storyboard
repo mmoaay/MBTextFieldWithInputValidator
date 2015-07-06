@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MBTextFieldWithInputValidator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="联系人" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejZ-vM-GLI" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="100" width="560" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Pou-3w-YrC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="contactEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="aNY-by-tPL"/>
+                                    <outlet property="inputValidator" destination="QaK-pJ-bN7" id="hY1-II-hSu"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="卡号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vy6-8e-Xdl" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="200" width="560" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="cardEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="dgh-d5-iev"/>
+                                    <outlet property="inputValidator" destination="ZMK-oO-gsM" id="Qy0-AY-2LK"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99o-Gc-JIl" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="250" width="560" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="phoneEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="1CH-3c-mgJ"/>
+                                    <outlet property="inputValidator" destination="lme-5O-a7H" id="Mbs-MH-6a7"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="963-0P-rtM" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="300" width="560" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="passwordEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="yTu-cu-9eV"/>
+                                    <outlet property="inputValidator" destination="EXs-Wy-qG3" id="Ylp-Eo-7ue"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="昵称" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-iA-c5f" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="150" width="560" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="nickNameEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Xv7-Qu-1cl"/>
+                                    <outlet property="inputValidator" destination="mYg-6W-0uj" id="Jl0-nB-PLP"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vy6-8e-Xdl" firstAttribute="width" secondItem="ejZ-vM-GLI" secondAttribute="width" id="5oC-BD-Z2c"/>
+                            <constraint firstItem="vy6-8e-Xdl" firstAttribute="top" secondItem="Mte-iA-c5f" secondAttribute="bottom" constant="10" id="7Ru-EY-SrD"/>
+                            <constraint firstItem="vy6-8e-Xdl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoM-fn-69G"/>
+                            <constraint firstItem="Mte-iA-c5f" firstAttribute="width" secondItem="ejZ-vM-GLI" secondAttribute="width" id="B4r-Ne-g2e"/>
+                            <constraint firstItem="963-0P-rtM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHf-Nb-70E"/>
+                            <constraint firstItem="vy6-8e-Xdl" firstAttribute="height" secondItem="ejZ-vM-GLI" secondAttribute="height" id="BQK-Ce-SyW"/>
+                            <constraint firstItem="Mte-iA-c5f" firstAttribute="top" secondItem="ejZ-vM-GLI" secondAttribute="bottom" constant="10" id="GDB-vy-VPr"/>
+                            <constraint firstItem="ejZ-vM-GLI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LPX-YQ-YsG"/>
+                            <constraint firstItem="Mte-iA-c5f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ntv-4g-Zmh"/>
+                            <constraint firstItem="99o-Gc-JIl" firstAttribute="height" secondItem="ejZ-vM-GLI" secondAttribute="height" id="OON-Tt-b6f"/>
+                            <constraint firstItem="99o-Gc-JIl" firstAttribute="top" secondItem="vy6-8e-Xdl" secondAttribute="bottom" constant="10" id="chJ-pa-VxY"/>
+                            <constraint firstAttribute="trailing" secondItem="ejZ-vM-GLI" secondAttribute="trailing" constant="20" id="gmu-5V-0Cm"/>
+                            <constraint firstItem="ejZ-vM-GLI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="jMN-yM-KD1"/>
+                            <constraint firstItem="99o-Gc-JIl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="md7-Zj-11Q"/>
+                            <constraint firstItem="963-0P-rtM" firstAttribute="width" secondItem="ejZ-vM-GLI" secondAttribute="width" id="nbD-xH-ujp"/>
+                            <constraint firstItem="Mte-iA-c5f" firstAttribute="height" secondItem="ejZ-vM-GLI" secondAttribute="height" id="pJc-6p-hex"/>
+                            <constraint firstItem="99o-Gc-JIl" firstAttribute="width" secondItem="ejZ-vM-GLI" secondAttribute="width" id="r7L-ao-cPe"/>
+                            <constraint firstItem="963-0P-rtM" firstAttribute="height" secondItem="ejZ-vM-GLI" secondAttribute="height" id="uLM-rl-8dz"/>
+                            <constraint firstItem="963-0P-rtM" firstAttribute="top" secondItem="99o-Gc-JIl" secondAttribute="bottom" constant="10" id="uZ0-ji-8Fk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardField" destination="vy6-8e-Xdl" id="hg0-bw-yeN"/>
+                        <outlet property="contactField" destination="ejZ-vM-GLI" id="rQq-SV-geQ"/>
+                        <outlet property="nickNameField" destination="Mte-iA-c5f" id="QB9-iB-TVI"/>
+                        <outlet property="passwordField" destination="963-0P-rtM" id="fvN-wV-L7a"/>
+                        <outlet property="phoneField" destination="99o-Gc-JIl" id="wfb-iv-Fl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="QaK-pJ-bN7" customClass="MBEmptyInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
+                <customObject id="mYg-6W-0uj" customClass="MBAlphabetInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
+                <customObject id="ZMK-oO-gsM" customClass="MBNumberInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
+                <customObject id="lme-5O-a7H" customClass="MBPhoneInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
+                <customObject id="EXs-Wy-qG3" customClass="MBPasswordInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
