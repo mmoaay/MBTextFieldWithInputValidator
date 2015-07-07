@@ -9,20 +9,28 @@
 import UIKit
 
 class MBTextFieldWithInputValidator: UITextField {
-    @IBOutlet var inputValidators:[MBInputValidator]!
+    @IBOutlet var inputValidator:MBInputValidator?
     
     func validate(inputName:String, shouldAlert:Bool) -> MBInputValidator.ErrorDesc? {
-        for validator:MBInputValidator in self.inputValidators {
-            let error = validator.validateInput(self)
-            if nil != error {
-                let errorReason = (error?.leading)!+inputName+(error?.trailing)!
-                if true == shouldAlert {
-                    self.showAlertMessage((error?.title)!, message: errorReason)
-                }
-                return error
+        let error = self.validate(self.inputValidator)
+        if nil != error {
+            let errorReason = (error?.leading)!+inputName+(error?.trailing)!
+            if true == shouldAlert {
+                self.showAlertMessage((error?.title)!, message: errorReason)
             }
         }
-        return nil
+        return error
+    }
+    
+    private func validate(validator:MBInputValidator?) -> MBInputValidator.ErrorDesc?{
+        if nil == validator {
+            return nil
+        }
+        let ret = self.validate(validator!.next)
+        if nil != ret {
+            return ret
+        }
+        return validator!.validateInput(self)
     }
     
     private func showAlertMessage(title:String ,message:String) {

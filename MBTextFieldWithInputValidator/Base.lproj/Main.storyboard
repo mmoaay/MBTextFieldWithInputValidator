@@ -27,8 +27,8 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="contactEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="aNY-by-tPL"/>
-                                    <outletCollection property="inputValidators" destination="QaK-pJ-bN7" collectionClass="NSMutableArray" id="s9Z-xd-6mC"/>
-                                    <outletCollection property="inputValidators" destination="mYg-6W-0uj" collectionClass="NSMutableArray" id="yV1-Mm-hMc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aKz-tz-bjm"/>
+                                    <outlet property="inputValidator" destination="mYg-6W-0uj" id="B5i-Sl-v2j"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="昵称" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-iA-c5f" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
@@ -38,8 +38,6 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="nickNameEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Xv7-Qu-1cl"/>
-                                    <outletCollection property="inputValidators" destination="QaK-pJ-bN7" collectionClass="NSMutableArray" id="XBh-Q7-o5G"/>
-                                    <outletCollection property="inputValidators" destination="mYg-6W-0uj" collectionClass="NSMutableArray" id="BkX-7a-TEr"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="卡号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vy6-8e-Xdl" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
@@ -49,8 +47,6 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="cardEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="dgh-d5-iev"/>
-                                    <outletCollection property="inputValidators" destination="QaK-pJ-bN7" collectionClass="NSMutableArray" id="HcP-15-raY"/>
-                                    <outletCollection property="inputValidators" destination="ZMK-oO-gsM" collectionClass="NSMutableArray" id="OtW-RK-Uui"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99o-Gc-JIl" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
@@ -60,8 +56,6 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <connections>
                                     <action selector="phoneEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="1CH-3c-mgJ"/>
-                                    <outletCollection property="inputValidators" destination="QaK-pJ-bN7" collectionClass="NSMutableArray" id="hT7-tS-Pm6"/>
-                                    <outletCollection property="inputValidators" destination="lme-5O-a7H" collectionClass="NSMutableArray" id="fVW-NM-2Ft"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="963-0P-rtM" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
@@ -71,8 +65,6 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="passwordEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="yTu-cu-9eV"/>
-                                    <outletCollection property="inputValidators" destination="QaK-pJ-bN7" collectionClass="NSMutableArray" id="8mz-9v-vnk"/>
-                                    <outletCollection property="inputValidators" destination="EXs-Wy-qG3" collectionClass="NSMutableArray" id="xnE-zk-DXp"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -109,10 +101,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="QaK-pJ-bN7" customClass="MBEmptyInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
-                <customObject id="mYg-6W-0uj" customClass="MBAlphabetInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
-                <customObject id="ZMK-oO-gsM" customClass="MBNumberInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
-                <customObject id="lme-5O-a7H" customClass="MBPhoneInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
-                <customObject id="EXs-Wy-qG3" customClass="MBPasswordInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target"/>
+                <customObject id="mYg-6W-0uj" customClass="MBAlphabetInputValidator" customModule="MBTextFieldWithInputValidator" customModuleProvider="target">
+                    <connections>
+                        <outlet property="next" destination="QaK-pJ-bN7" id="iaY-Bx-UII"/>
+                    </connections>
+                </customObject>
             </objects>
         </scene>
     </scenes>

@@ -18,6 +18,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.initValidator()
+    }
+    
+    func initValidator() {
+        nickNameField.inputValidator = MBAlphabetInputValidator(next: MBEmptyInputValidator())
+        cardField.inputValidator = MBNumberInputValidator(next: MBEmptyInputValidator())
+        phoneField.inputValidator = MBPhoneInputValidator(next: MBEmptyInputValidator())
+        passwordField.inputValidator = MBPasswordInputValidator(next: MBEmptyInputValidator())
     }
 
     override func didReceiveMemoryWarning() {
