@@ -1,14 +1,8 @@
-//
-//  MBTextFieldWithInputValidatorTests.swift
-//  MBTextFieldWithInputValidatorTests
-//
-//  Created by Perry on 15/7/6.
-//  Copyright © 2015年 MmoaaY. All rights reserved.
-//
-
+import UIKit
 import XCTest
+import MBTextFieldWithInputValidator
 
-class MBTextFieldWithInputValidatorTests: XCTestCase {
+class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,7 +16,7 @@ class MBTextFieldWithInputValidatorTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {

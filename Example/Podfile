@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MBTextFieldWithInputValidator_Example', :exclusive => true do
+  pod 'MBTextFieldWithInputValidator', :path => '../'
+end
+
+target 'MBTextFieldWithInputValidator_Tests', :exclusive => true do
+  pod 'MBTextFieldWithInputValidator', :path => '../'
+
+  
+end
