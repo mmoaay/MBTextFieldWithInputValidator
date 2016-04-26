@@ -24,13 +24,12 @@
 
 ## 使用
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+clone 项目，然后在 Example 目录执行 `pod install`。
 
 
 ## 安装
 
-MBTextFieldWithInputValidator is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+MBTextFieldWithInputValidator 已经支持 [CocoaPods](http://cocoapods.org). 只需要在 Podfile 中加入下面的内容即可:
 
 ```ruby
 pod "MBTextFieldWithInputValidator"
