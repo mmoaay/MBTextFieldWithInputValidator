@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  MBTextFieldWithInputValidator
 //
-//  Created by Perry.Zheng ( 移动组 - 郑宜东 ） on 04/21/2016.
-//  Copyright (c) 2016 Perry.Zheng ( 移动组 - 郑宜东 ）. All rights reserved.
+//  Created by mmoaay on 04/21/2016.
+//  Copyright (c) 2016 mmoaay. All rights reserved.
 //
 
 import UIKit
