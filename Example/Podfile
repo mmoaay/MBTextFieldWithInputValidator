@@ -1,11 +1,5 @@
 use_frameworks!
 
-target 'MBTextFieldWithInputValidator_Example' do
-  pod 'MBTextFieldWithInputValidator'
-end
-
-target 'MBTextFieldWithInputValidator_Tests' do
-  pod 'MBTextFieldWithInputValidator'
-
-  
+target 'MBTextFieldWithInputValidator_Example', :exclusive => true do
+  pod 'MBTextFieldWithInputValidator', :path => '../'
 end

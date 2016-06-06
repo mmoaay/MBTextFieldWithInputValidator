@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MBTextFieldWithInputValidator: UITextField {
+public class MBTextFieldWithInputValidator: UITextField {
     @IBOutlet var inputValidator:MBInputValidator?
     
     func validate(inputName:String, shouldAlert:Bool) -> MBInputValidator.ErrorDesc? {

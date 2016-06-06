@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MBPhoneInputValidator: MBInputValidator {
+public class MBPhoneInputValidator: MBInputValidator {
     override func validateInput(input:UITextField) -> ErrorDesc?{
         if false == super.validateInput(input, regexString: "^\\d{11}$") {
             return ErrorDesc(title: "温馨提示", leading: "请输入正确的", trailing: "")

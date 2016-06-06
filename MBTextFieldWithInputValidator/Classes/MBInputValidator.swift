@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MBInputValidator: NSObject {
+public class MBInputValidator: NSObject {
     
     @IBOutlet var next:MBInputValidator?
     

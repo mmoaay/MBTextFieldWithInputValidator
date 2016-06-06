@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MBEmptyInputValidator: MBInputValidator {
+public class MBEmptyInputValidator: MBInputValidator {
     override func validateInput(input:UITextField) -> ErrorDesc?{
         if false == super.validateInput(input, regexString: nil) {
             return ErrorDesc(title: "温馨提示", leading: "请输入", trailing: "")
