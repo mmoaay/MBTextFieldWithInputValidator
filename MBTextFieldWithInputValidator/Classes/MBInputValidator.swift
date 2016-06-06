@@ -12,7 +12,7 @@ public class MBInputValidator: NSObject {
     
     @IBOutlet public var next:MBInputValidator?
     
-    convenience init(next:MBInputValidator?) {
+    public convenience init(next:MBInputValidator?) {
         self.init()
         self.next = next
     }
