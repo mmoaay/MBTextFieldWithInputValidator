@@ -9,9 +9,9 @@
 import UIKit
 
 public class MBTextFieldWithInputValidator: UITextField {
-    @IBOutlet var inputValidator:MBInputValidator?
+    @IBOutlet public var inputValidator:MBInputValidator?
     
-    func validate(inputName:String, shouldAlert:Bool) -> MBInputValidator.ErrorDesc? {
+    public func validate(inputName:String, shouldAlert:Bool) -> MBInputValidator.ErrorDesc? {
         let error = self.validate(self.inputValidator)
         if nil != error {
             let errorReason = (error?.leading)!+inputName+(error?.trailing)!

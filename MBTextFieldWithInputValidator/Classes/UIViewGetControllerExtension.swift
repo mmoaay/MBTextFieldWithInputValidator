@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIView{
-    func viewController() -> UIViewController? {
+    public func viewController() -> UIViewController? {
         for var next:UIView? = self.superview!; next != nil; next = next!.superview {
             let nextResponder = next!.nextResponder()
             if nextResponder?.isKindOfClass(UIViewController.classForCoder()) == true {

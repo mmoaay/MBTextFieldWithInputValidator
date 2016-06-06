@@ -10,14 +10,14 @@ import UIKit
 
 public class MBInputValidator: NSObject {
     
-    @IBOutlet var next:MBInputValidator?
+    @IBOutlet public var next:MBInputValidator?
     
     convenience init(next:MBInputValidator?) {
         self.init()
         self.next = next
     }
     
-    class ErrorDesc {
+    public class ErrorDesc {
         init(title:String, leading:String, trailing:String) {
             self.title = title
             self.leading = leading
@@ -28,11 +28,11 @@ public class MBInputValidator: NSObject {
         var trailing:String?
     }
     
-    func validateInput(input:UITextField) -> ErrorDesc?{
+    public func validateInput(input:UITextField) -> ErrorDesc?{
         return nil
     }
     
-    func validateInput(input:UITextField, regexString:String?) -> Bool{
+    public func validateInput(input:UITextField, regexString:String?) -> Bool{
         if nil == regexString {
             let trim = input.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
             return 0 != trim?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)

@@ -9,7 +9,7 @@
 import UIKit
 
 public class MBAlphabetInputValidator: MBInputValidator {
-    override func validateInput(input:UITextField) -> ErrorDesc?{
+    public override func validateInput(input:UITextField) -> ErrorDesc?{
         if false == super.validateInput(input, regexString: "^[A-Za-z]+$") {
             return ErrorDesc(title: "温馨提示", leading: "", trailing: "须由英文字母组成")
         }
