@@ -34,3 +34,7 @@ MBTextFieldWithInputValidator 已经支持 [CocoaPods](http://cocoapods.org). �
 ```ruby
 pod "MBTextFieldWithInputValidator"
 ```
+
+## 更新
+
+目前已经支持 Swift 3.0
