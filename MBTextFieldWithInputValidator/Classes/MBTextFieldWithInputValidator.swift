@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class MBTextFieldWithInputValidator: UITextField {
-    @IBOutlet public var inputValidator:MBInputValidator?
+open class MBTextFieldWithInputValidator: UITextField {
+    @IBOutlet open var inputValidator:MBInputValidator?
     
-    public func validate(inputName:String, shouldAlert:Bool) -> MBInputValidator.ErrorDesc? {
+    open func validate(_ inputName:String, shouldAlert:Bool) -> MBInputValidator.ErrorDesc? {
         let error = self.validate(self.inputValidator)
         if nil != error {
             let errorReason = (error?.leading)!+inputName+(error?.trailing)!
@@ -22,7 +22,7 @@ public class MBTextFieldWithInputValidator: UITextField {
         return error
     }
     
-    private func validate(validator:MBInputValidator?) -> MBInputValidator.ErrorDesc?{
+    fileprivate func validate(_ validator:MBInputValidator?) -> MBInputValidator.ErrorDesc?{
         if nil == validator {
             return nil
         }
@@ -33,11 +33,11 @@ public class MBTextFieldWithInputValidator: UITextField {
         return validator!.validateInput(self)
     }
     
-    private func showAlertMessage(title:String ,message:String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        let cancelAction = UIAlertAction(title: "知道了", style: UIAlertActionStyle.Cancel, handler: nil)
+    fileprivate func showAlertMessage(_ title:String ,message:String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let cancelAction = UIAlertAction(title: "知道了", style: UIAlertActionStyle.cancel, handler: nil)
         alertController.addAction(cancelAction)
-        self.viewController()!.presentViewController(alertController, animated: true, completion: nil)
+        self.viewController()!.present(alertController, animated: true, completion: nil)
     }
     
     

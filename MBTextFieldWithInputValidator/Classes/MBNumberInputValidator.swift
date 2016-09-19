@@ -8,8 +8,8 @@
 
 import UIKit
 
-public class MBNumberInputValidator: MBInputValidator {
-    public override func validateInput(input:UITextField) -> ErrorDesc?{
+open class MBNumberInputValidator: MBInputValidator {
+    open override func validateInput(_ input:UITextField) -> ErrorDesc?{
         if false == super.validateInput(input, regexString: "^[0-9]+$") {
             return ErrorDesc(title: "温馨提示", leading: "", trailing: "须由数字组成")
         }

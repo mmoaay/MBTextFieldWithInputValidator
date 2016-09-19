@@ -8,16 +8,16 @@
 
 import UIKit
 
-public class MBInputValidator: NSObject {
+open class MBInputValidator: NSObject {
     
-    @IBOutlet public var next:MBInputValidator?
+    @IBOutlet open var next:MBInputValidator?
     
     public convenience init(next:MBInputValidator?) {
         self.init()
         self.next = next
     }
     
-    public class ErrorDesc {
+    open class ErrorDesc {
         init(title:String, leading:String, trailing:String) {
             self.title = title
             self.leading = leading
@@ -28,18 +28,18 @@ public class MBInputValidator: NSObject {
         var trailing:String?
     }
     
-    public func validateInput(input:UITextField) -> ErrorDesc?{
+    open func validateInput(_ input:UITextField) -> ErrorDesc?{
         return nil
     }
     
-    public func validateInput(input:UITextField, regexString:String?) -> Bool{
+    open func validateInput(_ input:UITextField, regexString:String?) -> Bool{
         if nil == regexString {
-            let trim = input.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            return 0 != trim?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+            let trim = input.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            return 0 != trim?.lengthOfBytes(using: String.Encoding.utf8)
         }else {
             do {
-                let regex:NSRegularExpression =  try NSRegularExpression(pattern: regexString!, options: NSRegularExpressionOptions.AnchorsMatchLines)
-                let numberOfMactches = regex.numberOfMatchesInString(input.text!, options: NSMatchingOptions.Anchored, range: NSMakeRange(0, (input.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))!))
+                let regex:NSRegularExpression =  try NSRegularExpression(pattern: regexString!, options: NSRegularExpression.Options.anchorsMatchLines)
+                let numberOfMactches = regex.numberOfMatches(in: input.text!, options: NSRegularExpression.MatchingOptions.anchored, range: NSMakeRange(0, (input.text?.lengthOfBytes(using: String.Encoding.utf8))!))
                 
                 if 0 == numberOfMactches {
                     return false

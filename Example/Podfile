@@ -1,5 +1,5 @@
 use_frameworks!
 
-target 'MBTextFieldWithInputValidator_Example', :exclusive => true do
+target 'MBTextFieldWithInputValidator_Example' do
   pod 'MBTextFieldWithInputValidator', :path => '../'
 end
