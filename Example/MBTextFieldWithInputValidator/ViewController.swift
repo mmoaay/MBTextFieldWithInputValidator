@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBTextFieldWithInputValidator
 
 class ViewController: UIViewController {
 
