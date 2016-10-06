@@ -17,8 +17,70 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIn-qR-gM8">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAb-4g-7zS" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="qRj-uc-YNs"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <action selector="phoneEditingDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="GCc-JC-clr"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXH-Qu-hyk" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="QK2-dR-AD3"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="pwdEditingDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="svf-45-7L3"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WT3-Sv-sXb" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Tv9-hW-fKu"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="emailEditingDidEnd:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="YaC-yP-xdL"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WT3-Sv-sXb" secondAttribute="trailing" id="4Qp-0m-ZqM"/>
+                                    <constraint firstItem="QAb-4g-7zS" firstAttribute="top" secondItem="MIn-qR-gM8" secondAttribute="top" id="97E-GV-25m"/>
+                                    <constraint firstAttribute="trailing" secondItem="QAb-4g-7zS" secondAttribute="trailing" id="cRN-79-DeC"/>
+                                    <constraint firstItem="QAb-4g-7zS" firstAttribute="leading" secondItem="MIn-qR-gM8" secondAttribute="leading" id="gp8-sy-a1j"/>
+                                    <constraint firstItem="zXH-Qu-hyk" firstAttribute="top" secondItem="QAb-4g-7zS" secondAttribute="bottom" constant="10" id="gtk-ve-0wW"/>
+                                    <constraint firstItem="WT3-Sv-sXb" firstAttribute="leading" secondItem="MIn-qR-gM8" secondAttribute="leading" id="nEV-xl-9kT"/>
+                                    <constraint firstItem="zXH-Qu-hyk" firstAttribute="leading" secondItem="MIn-qR-gM8" secondAttribute="leading" id="pae-Zb-MqX"/>
+                                    <constraint firstItem="WT3-Sv-sXb" firstAttribute="top" secondItem="zXH-Qu-hyk" secondAttribute="bottom" constant="10" id="qn6-Ba-Uah"/>
+                                    <constraint firstAttribute="trailing" secondItem="zXH-Qu-hyk" secondAttribute="trailing" id="rEy-gl-0oK"/>
+                                    <constraint firstAttribute="bottom" secondItem="WT3-Sv-sXb" secondAttribute="bottom" id="seX-Po-Db6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MIn-qR-gM8" secondAttribute="trailing" constant="30" id="4v4-2u-Ijy"/>
+                            <constraint firstItem="MIn-qR-gM8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="70j-M5-IBd"/>
+                            <constraint firstItem="MIn-qR-gM8" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="c0T-bF-L3v"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="WT3-Sv-sXb" id="j2o-Gg-TMW"/>
+                        <outlet property="phoneTextField" destination="QAb-4g-7zS" id="3et-rr-Ojn"/>
+                        <outlet property="pwdTextField" destination="zXH-Qu-hyk" id="xFn-0Y-VAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
