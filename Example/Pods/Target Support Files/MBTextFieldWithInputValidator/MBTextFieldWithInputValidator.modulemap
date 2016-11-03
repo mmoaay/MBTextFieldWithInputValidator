@@ -1,0 +1,6 @@
+framework module MBTextFieldWithInputValidator {
+  umbrella header "MBTextFieldWithInputValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}

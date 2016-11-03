@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07A12D92A6846BB02DC3A825BC7F68F3 /* Pods-MBTextFieldWithInputValidator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B82401D3C2DB7B9DA7701315D71935 /* Pods-MBTextFieldWithInputValidator_Example-dummy.m */; };
+		12D81D895896D60C878777E8A89DDCB7 /* UITextFieldValidatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE684C2B7B287C3E0413613A91EF8F /* UITextFieldValidatorExtension.swift */; };
+		1F74714EF0585783F06C4860F28F62D9 /* MBTextFieldWithInputValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C15B57EC4D65A76778D778A432E2E /* MBTextFieldWithInputValidator-dummy.m */; };
+		237761932C18C2F392F83E30B53F0C5D /* MBTextFieldWithInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144E4836A07E6ADC517FEF2E2D6CF59 /* MBTextFieldWithInputValidator.swift */; };
+		24CCE4EA1D99EFA79A6C31A6F7EA05F2 /* MBPhoneInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241D6387DE6A261CD46389EB3372E621 /* MBPhoneInputValidator.swift */; };
+		351FBACF58BC353EFE78AC38B1313BA8 /* MBEmailInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD2DD31BC1C5C912800106F42309FE8 /* MBEmailInputValidator.swift */; };
+		3A16CDA75D8AFF0ED669A42C20B15AC2 /* UIViewGetControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFC4EFCAAAECDE97EB61C4BD73F646 /* UIViewGetControllerExtension.swift */; };
+		43C4559C484B187E944DDFA8506C85E8 /* MBNumberInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822C51866291484F2E80CB0DABB3A8D2 /* MBNumberInputValidator.swift */; };
+		616305698B5CF3998DB33283B3D1402D /* MBAlphabetInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D12786EB338DFB08E5008E0F07456EB /* MBAlphabetInputValidator.swift */; };
+		9AA63650CB0FC0712EFEDECFE2717147 /* MBInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56DBAC8AC72CF9E56553E05F43E1F1 /* MBInputValidator.swift */; };
+		B01C9895EC962FA48396DC2E00EB1900 /* MBEmptyInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96206C46145D636D720AA3E8FC45E3F6 /* MBEmptyInputValidator.swift */; };
+		BB49E0170D7487A441A675198F4582B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BC2D9B62041E24899364C01ABC426176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C7904B5FBBDC5FDBF0E11BAD1A50A6ED /* MBPasswordInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087465039890BC155392EFE42252ED9 /* MBPasswordInputValidator.swift */; };
+		C93751FEA4460FDDDE6063D92D3CC8EE /* Pods-MBTextFieldWithInputValidator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F6EA1B1E947AC6F52E69675A98F4A0 /* Pods-MBTextFieldWithInputValidator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4F49FF65CAC81991B11A97964B9170 /* MBZipCodeInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6476D3143196607078D46D1075E78 /* MBZipCodeInputValidator.swift */; };
+		CFB27FC1DDBF3286C264B93A4264FB88 /* MBTextFieldWithInputValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DB8DE122FCA522C09C5F5DF3842281 /* MBTextFieldWithInputValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F021356423E0AA1F626EA14418E9048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493F18582999560FA1181272FBA41FA3;
+			remoteInfo = MBTextFieldWithInputValidator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F6EA1B1E947AC6F52E69675A98F4A0 /* Pods-MBTextFieldWithInputValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MBTextFieldWithInputValidator_Example-umbrella.h"; sourceTree = "<group>"; };
+		0D12786EB338DFB08E5008E0F07456EB /* MBAlphabetInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBAlphabetInputValidator.swift; sourceTree = "<group>"; };
+		241D6387DE6A261CD46389EB3372E621 /* MBPhoneInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPhoneInputValidator.swift; sourceTree = "<group>"; };
+		27576F63FBB7535EE7653E49153184B7 /* Pods-MBTextFieldWithInputValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MBTextFieldWithInputValidator_Example.modulemap"; sourceTree = "<group>"; };
+		3144E4836A07E6ADC517FEF2E2D6CF59 /* MBTextFieldWithInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBTextFieldWithInputValidator.swift; sourceTree = "<group>"; };
+		443D7BEFE2719131031CC17CC05DD0A0 /* MBTextFieldWithInputValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBTextFieldWithInputValidator-prefix.pch"; sourceTree = "<group>"; };
+		47AE684C2B7B287C3E0413613A91EF8F /* UITextFieldValidatorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextFieldValidatorExtension.swift; sourceTree = "<group>"; };
+		5B7C15B57EC4D65A76778D778A432E2E /* MBTextFieldWithInputValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBTextFieldWithInputValidator-dummy.m"; sourceTree = "<group>"; };
+		5DD2DD31BC1C5C912800106F42309FE8 /* MBEmailInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBEmailInputValidator.swift; sourceTree = "<group>"; };
+		6607958D4B0619689266FFE8B226B414 /* Pods-MBTextFieldWithInputValidator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MBTextFieldWithInputValidator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6ACFC4EFCAAAECDE97EB61C4BD73F646 /* UIViewGetControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewGetControllerExtension.swift; sourceTree = "<group>"; };
+		7087465039890BC155392EFE42252ED9 /* MBPasswordInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBPasswordInputValidator.swift; sourceTree = "<group>"; };
+		822C51866291484F2E80CB0DABB3A8D2 /* MBNumberInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBNumberInputValidator.swift; sourceTree = "<group>"; };
+		85F6476D3143196607078D46D1075E78 /* MBZipCodeInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBZipCodeInputValidator.swift; sourceTree = "<group>"; };
+		8B0AC1540A31D57735079FB2EF78856F /* Pods-MBTextFieldWithInputValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBTextFieldWithInputValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8E744AC5E6199B5B4AF93F6AE55C2C20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96206C46145D636D720AA3E8FC45E3F6 /* MBEmptyInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBEmptyInputValidator.swift; sourceTree = "<group>"; };
+		A82789FF998526D277F132DB64B18F32 /* Pods_MBTextFieldWithInputValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MBTextFieldWithInputValidator_Example.framework; path = "Pods-MBTextFieldWithInputValidator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B82401D3C2DB7B9DA7701315D71935 /* Pods-MBTextFieldWithInputValidator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBTextFieldWithInputValidator_Example-dummy.m"; sourceTree = "<group>"; };
+		BCFBE6A2840B187BD7D7E115B0C89D1D /* Pods-MBTextFieldWithInputValidator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MBTextFieldWithInputValidator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C07D549A732A5A18030F1965665C12B6 /* Pods-MBTextFieldWithInputValidator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MBTextFieldWithInputValidator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3DB8DE122FCA522C09C5F5DF3842281 /* MBTextFieldWithInputValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBTextFieldWithInputValidator-umbrella.h"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CCE7A207432DF662A058AAA8EED5A087 /* Pods-MBTextFieldWithInputValidator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MBTextFieldWithInputValidator_Example-resources.sh"; sourceTree = "<group>"; };
+		CD56DBAC8AC72CF9E56553E05F43E1F1 /* MBInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MBInputValidator.swift; sourceTree = "<group>"; };
+		D647B750CA5DB1F78C0AD8846B3F4C4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F23D86289F1CCF7996B63829BCF755 /* MBTextFieldWithInputValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBTextFieldWithInputValidator.xcconfig; sourceTree = "<group>"; };
+		EF878859FD844401A919EF90A8E1A814 /* MBTextFieldWithInputValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBTextFieldWithInputValidator.modulemap; sourceTree = "<group>"; };
+		F352FD5348205DC67E80D1CF2404590F /* Pods-MBTextFieldWithInputValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBTextFieldWithInputValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F43714EB3E56312E4588B5FC5C710FFB /* MBTextFieldWithInputValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBTextFieldWithInputValidator.framework; path = MBTextFieldWithInputValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		447EABBCF1789240774070214D02551E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2D9B62041E24899364C01ABC426176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570DC492C23D6913D8732283CAB1F87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB49E0170D7487A441A675198F4582B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14C24038D4D3F699B55ECAAD8C9B34DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F68F381387D657AA2BA6256A579B4E0 /* Extension */,
+				2537ABFB3BB773267512981F286DFDB7 /* Validators */,
+				B4D64AFBCA4EDA451C0E0F0421088970 /* View */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2537ABFB3BB773267512981F286DFDB7 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				0D12786EB338DFB08E5008E0F07456EB /* MBAlphabetInputValidator.swift */,
+				5DD2DD31BC1C5C912800106F42309FE8 /* MBEmailInputValidator.swift */,
+				96206C46145D636D720AA3E8FC45E3F6 /* MBEmptyInputValidator.swift */,
+				CD56DBAC8AC72CF9E56553E05F43E1F1 /* MBInputValidator.swift */,
+				822C51866291484F2E80CB0DABB3A8D2 /* MBNumberInputValidator.swift */,
+				7087465039890BC155392EFE42252ED9 /* MBPasswordInputValidator.swift */,
+				241D6387DE6A261CD46389EB3372E621 /* MBPhoneInputValidator.swift */,
+				85F6476D3143196607078D46D1075E78 /* MBZipCodeInputValidator.swift */,
+			);
+			name = Validators;
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CF8BE42B9B80A4495B5419770D7F6548 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E47D5B389D13311566DD18CC4903D012 /* Products */,
+				CAB06C3F76A69AA07243CD2C8D3250D6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A9FAEC38781DAC2589D8753EB86D40B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E744AC5E6199B5B4AF93F6AE55C2C20 /* Info.plist */,
+				EF878859FD844401A919EF90A8E1A814 /* MBTextFieldWithInputValidator.modulemap */,
+				D9F23D86289F1CCF7996B63829BCF755 /* MBTextFieldWithInputValidator.xcconfig */,
+				5B7C15B57EC4D65A76778D778A432E2E /* MBTextFieldWithInputValidator-dummy.m */,
+				443D7BEFE2719131031CC17CC05DD0A0 /* MBTextFieldWithInputValidator-prefix.pch */,
+				C3DB8DE122FCA522C09C5F5DF3842281 /* MBTextFieldWithInputValidator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MBTextFieldWithInputValidator";
+			sourceTree = "<group>";
+		};
+		8C411CE9506451BD8AFBD8EE7EFCAE0E /* Pods-MBTextFieldWithInputValidator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D647B750CA5DB1F78C0AD8846B3F4C4D /* Info.plist */,
+				27576F63FBB7535EE7653E49153184B7 /* Pods-MBTextFieldWithInputValidator_Example.modulemap */,
+				C07D549A732A5A18030F1965665C12B6 /* Pods-MBTextFieldWithInputValidator_Example-acknowledgements.markdown */,
+				BCFBE6A2840B187BD7D7E115B0C89D1D /* Pods-MBTextFieldWithInputValidator_Example-acknowledgements.plist */,
+				B9B82401D3C2DB7B9DA7701315D71935 /* Pods-MBTextFieldWithInputValidator_Example-dummy.m */,
+				6607958D4B0619689266FFE8B226B414 /* Pods-MBTextFieldWithInputValidator_Example-frameworks.sh */,
+				CCE7A207432DF662A058AAA8EED5A087 /* Pods-MBTextFieldWithInputValidator_Example-resources.sh */,
+				09F6EA1B1E947AC6F52E69675A98F4A0 /* Pods-MBTextFieldWithInputValidator_Example-umbrella.h */,
+				8B0AC1540A31D57735079FB2EF78856F /* Pods-MBTextFieldWithInputValidator_Example.debug.xcconfig */,
+				F352FD5348205DC67E80D1CF2404590F /* Pods-MBTextFieldWithInputValidator_Example.release.xcconfig */,
+			);
+			name = "Pods-MBTextFieldWithInputValidator_Example";
+			path = "Target Support Files/Pods-MBTextFieldWithInputValidator_Example";
+			sourceTree = "<group>";
+		};
+		9F68F381387D657AA2BA6256A579B4E0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47AE684C2B7B287C3E0413613A91EF8F /* UITextFieldValidatorExtension.swift */,
+				6ACFC4EFCAAAECDE97EB61C4BD73F646 /* UIViewGetControllerExtension.swift */,
+			);
+			name = Extension;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B4D64AFBCA4EDA451C0E0F0421088970 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3144E4836A07E6ADC517FEF2E2D6CF59 /* MBTextFieldWithInputValidator.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFFC9E2986F9418A587C33818451F5CE /* MBTextFieldWithInputValidator */ = {
+			isa = PBXGroup;
+			children = (
+				14C24038D4D3F699B55ECAAD8C9B34DF /* Classes */,
+			);
+			name = MBTextFieldWithInputValidator;
+			path = MBTextFieldWithInputValidator;
+			sourceTree = "<group>";
+		};
+		CAB06C3F76A69AA07243CD2C8D3250D6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C411CE9506451BD8AFBD8EE7EFCAE0E /* Pods-MBTextFieldWithInputValidator_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF8BE42B9B80A4495B5419770D7F6548 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D85EC0F49F52DD94D7EB720B73351F16 /* MBTextFieldWithInputValidator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D85EC0F49F52DD94D7EB720B73351F16 /* MBTextFieldWithInputValidator */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC9E2986F9418A587C33818451F5CE /* MBTextFieldWithInputValidator */,
+				8A9FAEC38781DAC2589D8753EB86D40B /* Support Files */,
+			);
+			name = MBTextFieldWithInputValidator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E47D5B389D13311566DD18CC4903D012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43714EB3E56312E4588B5FC5C710FFB /* MBTextFieldWithInputValidator.framework */,
+				A82789FF998526D277F132DB64B18F32 /* Pods_MBTextFieldWithInputValidator_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		165693831DD66117FDF33EF7B1EB227C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB27FC1DDBF3286C264B93A4264FB88 /* MBTextFieldWithInputValidator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA25EDCFEF8137B70A473F45E5120ED0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93751FEA4460FDDDE6063D92D3CC8EE /* Pods-MBTextFieldWithInputValidator_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		493F18582999560FA1181272FBA41FA3 /* MBTextFieldWithInputValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B817128A7EF1D766C62EDC50203B54A4 /* Build configuration list for PBXNativeTarget "MBTextFieldWithInputValidator" */;
+			buildPhases = (
+				5BB80F537E2CDD51DAE4A15941B98BEA /* Sources */,
+				447EABBCF1789240774070214D02551E /* Frameworks */,
+				165693831DD66117FDF33EF7B1EB227C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBTextFieldWithInputValidator;
+			productName = MBTextFieldWithInputValidator;
+			productReference = F43714EB3E56312E4588B5FC5C710FFB /* MBTextFieldWithInputValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD0DF22D9A5EAB8E52E5390592A8937D /* Pods-MBTextFieldWithInputValidator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87821A2BB3804C3BDCCFEBFA26B6DF6D /* Build configuration list for PBXNativeTarget "Pods-MBTextFieldWithInputValidator_Example" */;
+			buildPhases = (
+				08A8095A0DB1903BC2364C17C7F30872 /* Sources */,
+				570DC492C23D6913D8732283CAB1F87C /* Frameworks */,
+				DA25EDCFEF8137B70A473F45E5120ED0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3662579DBBFDCBCE5C6A9B22BDCBDA3B /* PBXTargetDependency */,
+			);
+			name = "Pods-MBTextFieldWithInputValidator_Example";
+			productName = "Pods-MBTextFieldWithInputValidator_Example";
+			productReference = A82789FF998526D277F132DB64B18F32 /* Pods_MBTextFieldWithInputValidator_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E47D5B389D13311566DD18CC4903D012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493F18582999560FA1181272FBA41FA3 /* MBTextFieldWithInputValidator */,
+				BD0DF22D9A5EAB8E52E5390592A8937D /* Pods-MBTextFieldWithInputValidator_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A8095A0DB1903BC2364C17C7F30872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A12D92A6846BB02DC3A825BC7F68F3 /* Pods-MBTextFieldWithInputValidator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB80F537E2CDD51DAE4A15941B98BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616305698B5CF3998DB33283B3D1402D /* MBAlphabetInputValidator.swift in Sources */,
+				351FBACF58BC353EFE78AC38B1313BA8 /* MBEmailInputValidator.swift in Sources */,
+				B01C9895EC962FA48396DC2E00EB1900 /* MBEmptyInputValidator.swift in Sources */,
+				9AA63650CB0FC0712EFEDECFE2717147 /* MBInputValidator.swift in Sources */,
+				43C4559C484B187E944DDFA8506C85E8 /* MBNumberInputValidator.swift in Sources */,
+				C7904B5FBBDC5FDBF0E11BAD1A50A6ED /* MBPasswordInputValidator.swift in Sources */,
+				24CCE4EA1D99EFA79A6C31A6F7EA05F2 /* MBPhoneInputValidator.swift in Sources */,
+				1F74714EF0585783F06C4860F28F62D9 /* MBTextFieldWithInputValidator-dummy.m in Sources */,
+				237761932C18C2F392F83E30B53F0C5D /* MBTextFieldWithInputValidator.swift in Sources */,
+				CE4F49FF65CAC81991B11A97964B9170 /* MBZipCodeInputValidator.swift in Sources */,
+				12D81D895896D60C878777E8A89DDCB7 /* UITextFieldValidatorExtension.swift in Sources */,
+				3A16CDA75D8AFF0ED669A42C20B15AC2 /* UIViewGetControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3662579DBBFDCBCE5C6A9B22BDCBDA3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBTextFieldWithInputValidator;
+			target = 493F18582999560FA1181272FBA41FA3 /* MBTextFieldWithInputValidator */;
+			targetProxy = 3F021356423E0AA1F626EA14418E9048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01FA006F3C88C83405BFD55ECF5E8047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F23D86289F1CCF7996B63829BCF755 /* MBTextFieldWithInputValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBTextFieldWithInputValidator/MBTextFieldWithInputValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBTextFieldWithInputValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBTextFieldWithInputValidator/MBTextFieldWithInputValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBTextFieldWithInputValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59996A1EE8D96F2977AC901672E65ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F23D86289F1CCF7996B63829BCF755 /* MBTextFieldWithInputValidator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBTextFieldWithInputValidator/MBTextFieldWithInputValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBTextFieldWithInputValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBTextFieldWithInputValidator/MBTextFieldWithInputValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBTextFieldWithInputValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		624FFA459F797993C6CA69B5508ED50F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F352FD5348205DC67E80D1CF2404590F /* Pods-MBTextFieldWithInputValidator_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MBTextFieldWithInputValidator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MBTextFieldWithInputValidator_Example/Pods-MBTextFieldWithInputValidator_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MBTextFieldWithInputValidator_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B13C844E4E8A48E927BE447443149FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B0AC1540A31D57735079FB2EF78856F /* Pods-MBTextFieldWithInputValidator_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MBTextFieldWithInputValidator_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MBTextFieldWithInputValidator_Example/Pods-MBTextFieldWithInputValidator_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MBTextFieldWithInputValidator_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87821A2BB3804C3BDCCFEBFA26B6DF6D /* Build configuration list for PBXNativeTarget "Pods-MBTextFieldWithInputValidator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13C844E4E8A48E927BE447443149FB6 /* Debug */,
+				624FFA459F797993C6CA69B5508ED50F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B817128A7EF1D766C62EDC50203B54A4 /* Build configuration list for PBXNativeTarget "MBTextFieldWithInputValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59996A1EE8D96F2977AC901672E65ED7 /* Debug */,
+				01FA006F3C88C83405BFD55ECF5E8047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
