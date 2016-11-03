@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MBTextFieldWithInputValidator"
-  s.version          = "0.8.0"
+  s.version          = "0.9.0"
   s.summary          = ""
 
   s.homepage         = "https://github.com/mmoaay/MBTextFieldWithInputValidator"
