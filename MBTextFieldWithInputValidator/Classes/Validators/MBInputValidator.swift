@@ -8,16 +8,16 @@
 
 import UIKit
 
-open class MBInputValidator: NSObject {
+public class MBInputValidator: NSObject {
     
-    @IBOutlet open var next:MBInputValidator?
+    @IBOutlet public var next:MBInputValidator?
     
     public convenience init(next:MBInputValidator?) {
         self.init()
         self.next = next
     }
     
-    open class ErrorDesc {
+    public class ErrorDesc {
         init(title:String, leading:String, trailing:String) {
             self.title = title
             self.leading = leading
@@ -28,11 +28,11 @@ open class MBInputValidator: NSObject {
         var trailing:String?
     }
     
-    open func validateInput(_ input:UITextField) -> ErrorDesc?{
+    public func validateInput(_ input:UITextField) -> ErrorDesc?{
         return nil
     }
     
-    open func validateInput(_ input:UITextField, regexString:String?) -> Bool{
+    public func validateInput(_ input:UITextField, regexString:String?) -> Bool{
         if nil == regexString {
             let trim = input.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
             return 0 != trim?.lengthOfBytes(using: String.Encoding.utf8)

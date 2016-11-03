@@ -8,8 +8,8 @@
 
 import UIKit
 
-open class MBAlphabetInputValidator: MBInputValidator {
-    open override func validateInput(_ input:UITextField) -> ErrorDesc?{
+public class MBAlphabetInputValidator: MBInputValidator {
+    public override func validateInput(_ input:UITextField) -> ErrorDesc?{
         if false == super.validateInput(input, regexString: "^[A-Za-z]+$") {
             return ErrorDesc(title: "温馨提示", leading: "", trailing: "须由英文字母组成")
         }

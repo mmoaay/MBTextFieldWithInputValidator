@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -17,8 +17,52 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyQ-Xb-liS" customClass="MBTextFieldWithInputValidator" customModule="MBTextFieldWithInputValidator">
+                                <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZzP-fQ-nmu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Dw-Td-QYu">
+                                <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Boh-LC-q3V"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biq-OM-Nl9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jlH-0b-POP"/>
+                                </constraints>
+                                <state key="normal" title="提交"/>
+                                <connections>
+                                    <action selector="submit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cyl-95-pVW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hyQ-Xb-liS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="0y3-Dy-ly8"/>
+                            <constraint firstAttribute="trailing" secondItem="biq-OM-Nl9" secondAttribute="trailing" constant="10" id="2uc-of-9Ld"/>
+                            <constraint firstItem="hyQ-Xb-liS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="3Ul-bi-4Bj"/>
+                            <constraint firstItem="5Dw-Td-QYu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="CUR-R0-Pad"/>
+                            <constraint firstAttribute="trailing" secondItem="hyQ-Xb-liS" secondAttribute="trailing" constant="10" id="NRL-57-Nm2"/>
+                            <constraint firstItem="5Dw-Td-QYu" firstAttribute="top" secondItem="hyQ-Xb-liS" secondAttribute="bottom" constant="20" id="rKK-A8-jTj"/>
+                            <constraint firstItem="biq-OM-Nl9" firstAttribute="top" secondItem="5Dw-Td-QYu" secondAttribute="bottom" constant="20" id="rab-qS-dxY"/>
+                            <constraint firstAttribute="trailing" secondItem="5Dw-Td-QYu" secondAttribute="trailing" constant="10" id="sin-uK-ns6"/>
+                            <constraint firstItem="biq-OM-Nl9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="tLU-3F-GEU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="hyQ-Xb-liS" id="swT-Y8-rMe"/>
+                        <outlet property="pwdTextField" destination="5Dw-Td-QYu" id="3t2-Iz-dzG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

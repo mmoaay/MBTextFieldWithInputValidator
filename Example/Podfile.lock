@@ -1,5 +1,5 @@
 PODS:
-  - MBTextFieldWithInputValidator (0.6.0)
+  - MBTextFieldWithInputValidator (0.7.0)
 
 DEPENDENCIES:
   - MBTextFieldWithInputValidator (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MBTextFieldWithInputValidator: 3a89e9fe9736ef5097f68badfc23d6911b89b6c0
+  MBTextFieldWithInputValidator: 691a7a09f21be464e6a2e344a7682fe533ced197
 
 PODFILE CHECKSUM: 0f647bccf3147205d86657711a0dd50eb92b21c6
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.2.0.beta.1

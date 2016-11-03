@@ -18,8 +18,8 @@ import UIKit
 //    }
 //}
 
-open class MBZipCodeInputValidator: MBInputValidator {
-    open override func validateInput(_ input:UITextField) -> ErrorDesc?{
+public class MBZipCodeInputValidator: MBInputValidator {
+    public override func validateInput(_ input:UITextField) -> ErrorDesc?{
         if false == super.validateInput(input, regexString: "^[1-9]\\d{5}|$") {
             return ErrorDesc(title: "温馨提示", leading: "请输入正确的", trailing: "")
         }
