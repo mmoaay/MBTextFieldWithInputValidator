@@ -1,5 +1,9 @@
 # MBTextFieldWithInputValidator
 
+[![Version](https://img.shields.io/cocoapods/v/MBTextFieldWithInputValidator.svg?style=flat)](http://cocoapods.org/pods/MBTextFieldWithInputValidator)
+[![License](https://img.shields.io/cocoapods/l/MBTextFieldWithInputValidator.svg?style=flat)](http://cocoapods.org/pods/MBTextFieldWithInputValidator)
+[![Platform](https://img.shields.io/cocoapods/p/MBTextFieldWithInputValidator.svg?style=flat)](http://cocoapods.org/pods/MBTextFieldWithInputValidator)
+
 ## 功能
 
 对 `UITextField` 的内容进行验证功能，如果内容不符合验证策略，则弹出错误信息提示用户。
